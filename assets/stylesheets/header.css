@@ -1,0 +1,88 @@
+header {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+.header-background {
+  background-image: url("../images/Early-morning-fog-over-the-Golden-Gate-Bridge-©-Shutterstock-1500x650.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  opacity: 80%;
+  animation: fade-in 5s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  30% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 80%;
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  text-shadow: 3px 2px 9px rgba(0,0,0,0.56);
+  animation: fast-fade-in 3s;
+}
+
+@keyframes fast-fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.name-header {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+    transition-property: transform, opacity;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+  display: inline-block;
+  opacity: 1;
+  margin: 0;
+}
+
+.sub-header {
+  font-size: 1.5rem;
+}
+
+.header-photo {
+  width: 20rem;
+  height: 20rem;
+  background-image: url("../images/extended-headshot-square.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}

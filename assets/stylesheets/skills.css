@@ -1,0 +1,16 @@
+#skills {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  padding: 2rem;
+}
+
+.tech-icons {
+
+}
+
+.icon-row {
+  display: flex;
+  flex-direction: row;
+}

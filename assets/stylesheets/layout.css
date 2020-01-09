@@ -13,3 +13,30 @@ a {
   
   margin-right: 1rem;
 }
+
+button {
+  display: flex;
+  justify-content: center;
+  /* background-color: rgb(89,190,160); */
+  /* background-color: rgb(219,97,114); */
+  /* background-color: rgb(78,163,216); */
+  background-color: rgb(13, 128, 199);
+  color: white;
+  min-width: 10rem;
+  padding: 1rem;
+  border-radius: 3px;
+  margin: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition-property: background-color, color;
+    transition-duration: 0.2s, 0.2s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+}
+
+button:hover {
+  background-color: rgb(78,163,216);
+}
+

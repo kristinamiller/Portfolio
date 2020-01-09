@@ -1,80 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Kristina Miller</title>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kristina Miller</title>
 
-  <link rel="stylesheet" href="../assets/stylesheets/reset.css" type="text/css" />
-  <link rel="stylesheet" href="../assets/stylesheets/layout.css" type="text/css" />
-  <link rel="stylesheet" href="../assets/stylesheets/header.css" type="text/css" />
-  <link rel="stylesheet" href="../assets/stylesheets/projects.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="../assets/stylesheets/reset.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/stylesheets/layout.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/stylesheets/header.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/stylesheets/projects.css"
+      type="text/css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="../src/scrollissimo.min.js"></script>
 
-  <script type="application/javascript" src="./main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          scrollissimo.knock();
+        });
+      });
+    </script>
 
-  <!-- <link rel="shortcut icon" type="image/png" href="../assets/images/globe-icon.png" /> -->
-</head>
-<body>
-  <header>
-    <div class="header-background"></div>
-    <div class="header-content">
-      <div class="header-photo"></div>
-      <h1 class="name-header">Kristina Miller</h1>
-      <h2 class="sub-header">Software Engineer</h2>
-    </div>
-  </header>
+    <script type="application/javascript" src="./main.js"></script>
 
-  <div id="projects">
-    <h1>Projects</h1>
-    <div class="project-card">
-      <div class="project-image-container">
-        <img src="../assets/images/AcousticSoundsScreenshot.png" alt="" class="project-image">
-      </div>
-      <div class="project-info">
-        <h1 class="project-title">Acoustic Sounds</h1>
-        <p class="project-description">Full stack web application for uploading and sharing music inspired by SoundCloud and Pandora.</p>
-        <div class="project-links">
-          <a href="https://acousticsounds.herokuapp.com/">Live</a>
-          <a href="https://github.com/kristinamiller/AcousticSounds">Code</a>
+    <!-- <link rel="shortcut icon" type="image/png" href="../assets../assets/images/globe-icon.png" /> -->
+  </head>
+  <body>
+    <header>
+      <div class="header-background"></div>
+      <div class="header-content">
+        <div class="header-photo"></div>
+        <h1 class="name-header">Kristina Miller</h1>
+        <h2 class="sub-header">Software Engineer</h2>
+        <div class="scroll-link">
+          <a href="#projects">More About Me</a>
         </div>
       </div>
-    </div>
-    <div class="project-card project-2">
-      <div class="project-image-container">
-        <img src="../assets/images/GaiaCyclesScreenshot.png" alt="" class="project-image">
-      </div>
-      <div class="project-info">
-        <h1 class="project-title">GaiaCycles</h1>
-        <p class="project-description">Full stack web application for uploading and sharing music inspired by SoundCloud and Pandora.</p>
-        <div class="project-links">
-          <a href="https://acousticsounds.herokuapp.com/">Live</a>
-          <a href="https://github.com/kristinamiller/AcousticSounds">Code</a>
+    </header>
+
+    <section id="projects">
+      <div class="project-card">
+        <div class="project-image-container">
+          <a href="https://acousticsounds.herokuapp.com/" target="_blank"><img src="../assets/images/AcousticSoundsScreenshot.png" alt="" class="project-image" /></a>
+        </div>
+        <div class="project-info">
+          <h1 class="project-title">Acoustic Sounds</h1>
+          <p class="project-description">
+            Full stack web application for uploading and sharing music inspired
+            by SoundCloud and Pandora.
+          </p>
+          <div class="project-links">
+            <a href="https://acousticsounds.herokuapp.com/">Live</a>
+            <a href="https://github.com/kristinamiller/AcousticSounds">Code</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="project-card">
-      <div class="project-image-container">
-        <img src="../assets/images/BubbleBlastScreenshot.png" alt="" class="project-image">
-      </div>
-      <div class="project-info">
-        <h1 class="project-title">Bubble Blast</h1>
-        <p class="project-description">Full stack web application for uploading and sharing music inspired by SoundCloud and Pandora.</p>
-        <div class="project-links">
-          <a href="https://acousticsounds.herokuapp.com/">Live</a>
-          <a href="https://github.com/kristinamiller/AcousticSounds">Code</a>
+      <div class="project-card project-2">
+        <div class="project-image-container">
+          <a href="https://kristinamiller.github.io/EarthCycles/dist/" target="_blank"><img src="../assets/images/GaiaCyclesScreenshot.png" alt="" class="project-image" /></a>
+          
+        </div>
+        <div class="project-info">
+          <h1 class="project-title">GaiaCycles</h1>
+          <p class="project-description">
+            Interactive animation of the Carbon Cycle and ecosystem nutrient flows.
+          </p>
+          <div class="project-links">
+            <a href="https://kristinamiller.github.io/EarthCycles/dist/">Live</a>
+            <a href="https://github.com/kristinamiller/EarthCycles">Code</a>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="project-card">
+        <div class="project-image-container">
+          <img
+            src="../assets/images/BubbleBlastScreenshot.png"
+            alt=""
+            class="project-image"
+          />
+        </div>
+        <div class="project-info">
+          <h1 class="project-title">Bubble Blast</h1>
+          <p class="project-description">
+            Multiple choice learning game for children.
+          </p>
+          <div class="project-links">
+            <a href="https://bubbleblast.herokuapp.com/">Live</a>
+            <a href="https://github.com/erinicole/BubbleBlast">Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </div>
-
-
-
-
-
-
-
-</body>
+    <section id="technologies" class="wrapper style3 special">
+      <div class="inner">
+        <header class="major">
+          <h2>Technologies</h2>
+        </header>
+        <section class="tech-icons">
+          <section class="icon-row">
+            <div class="icon-holder">
+              <img
+                class="icon"
+                height="120px"
+                width="120px"
+                src="../assets/images/tech_icons/js1.svg"
+                alt=""
+              />
+            </div>
+            <div class="icon-holder">
+              <img
+                class="icon"
+                height="120px"
+                width="120px"
+                src="../assets/images/tech_icons/react.svg"
+                alt=""
+              />
+            </div>
+            <div class="icon-holder">
+              <img
+                class="icon"
+                height="120px"
+                width="120px"
+                src="../assets/images/tech_icons/redux2.svg"
+                alt=""
+              />
+            </div>
+            <div class="icon-holder">
+              <img
+                class="icon"
+                height="120px"
+                width="120px"
+                src="../assets/images/tech_icons/html5.svg"
+                alt=""
+              />
+            </div>
+            <div class="icon-holder">
+              <img
+                class="icon"
+                height="120px"
+                width="120px"
+                src="../assets/images/tech_icons/css3.svg"
+                alt=""
+              />
+            </div>
+          </section>
+          <section class="icon-row">
+            <div class="icon-holder">
+              <img
+                class="icon"
+                height="120px"
+                width="120px"
+                src="../assets/images/tech_icons/rails.svg"
+                alt=""
+              />
+            </div>
+            <div class="icon-holder">
+              <img
+                class="icon"
+                height="120px"
+                width="120px"
+                src="../assets/images/tech_icons/postgresql2.svg"
+                alt=""
+              />
+            </div>
+            <div class="icon-holder">
+              <img
+                class="icon"
+                height="120px"
+                width="120px"
+                src="../assets/images/tech_icons/nodejs.svg"
+                alt=""
+              />
+            </div>
+            <div class="icon-holder">
+              <img
+                class="icon"
+                height="120px"
+                width="120px"
+                src="../assets/images/tech_icons/git2.svg"
+                alt=""
+              />
+            </div>
+          </section>
+        </section>
+      </div>
+    </section>
+  </body>
 </html>
